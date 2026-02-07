@@ -1,29 +1,29 @@
 <script setup lang="ts">
-import { computed } from "vue";
+import { computed } from "vue"
 
 interface Props {
-  label?: string;
-  disabled?: boolean;
+  label?: string
+  disabled?: boolean
 }
 
 const props = withDefaults(defineProps<Props>(), {
   label: "",
   disabled: false,
-});
-const isDisabled = computed(() => props.disabled);
+})
+const isDisabled = computed(() => props.disabled)
 
 const emit = defineEmits<{
-  click: [value: MouseEvent];
-}>();
+  click: [value: MouseEvent]
+}>()
 const handleClick = (event: MouseEvent) => {
-  if (isDisabled.value) return;
-  emit("click", event);
-};
+  if (isDisabled.value) return
+  emit("click", event)
+}
 </script>
 
 <template>
   <li class="control-item button" :class="{ disabled: isDisabled }">
-    <label class="w-100" ref="label" @click="handleClick">
+    <label tabindex="0" role="button" class="w-100" ref="label" @click="handleClick">
       {{ label }}
     </label>
   </li>
