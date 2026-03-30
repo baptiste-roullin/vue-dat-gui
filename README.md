@@ -24,15 +24,15 @@ Check out the [demo page](https://cyrilf.github.io/vue-dat-gui/).
 ### Option 1 - Install from NPM
 
 ```
-npm install --save @cyrilf/vue-dat-gui
+npm install --save vue-dat-gui
 ```
 
 Then the usage is:
 
 ```js
 import { createApp } from "vue";
-import VueDatGui from "@cyrilf/vue-dat-gui";
-import "@cyrilf/vue-dat-gui/dist/style.css";
+import VueDatGui from "vue-dat-gui";
+import "vue-dat-gui/dist/style.css";
 
 /* your code */
 // ...
@@ -50,7 +50,7 @@ In your head tag, include the following code:
 ```html
 <link
   rel="stylesheet"
-  href="https://unpkg.com/@cyrilf/vue-dat-gui@latest/dist/style.css"
+  href="https://unpkg.com/vue-dat-gui@latest/dist/style.css"
 />
 <script type="module" lang="ts">
   import {
@@ -58,7 +58,7 @@ In your head tag, include the following code:
     computed,
     ref,
   } from "https://unpkg.com/vue@3/dist/vue.esm-browser.js";
-  import VueDatGui from "https://unpkg.com/@cyrilf/vue-dat-gui@latest/dist/vue-dat-gui.js";
+  import VueDatGui from "https://unpkg.com/vue-dat-gui@latest/dist/vue-dat-gui.js";
 
   createApp({
     /*your code*/
