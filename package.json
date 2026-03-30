@@ -51,6 +51,8 @@
       "types": "./dist/types/index.d.ts",
       "default": "./dist/vue-dat-gui.js"
     },
-    "./dist/style.css": "./dist/style.css"
+    "./style.css": {
+      "import": "./dist/vue-dat-gui.css"
+    }
   }
 }

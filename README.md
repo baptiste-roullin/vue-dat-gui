@@ -31,8 +31,8 @@ Then the usage is:
 
 ```js
 import { createApp } from "vue";
-import VueDatGui from "vue-dat-gui";
-import "vue-dat-gui/dist/style.css";
+import VueDatGui from "vue-dat-gui"
+import "vue-dat-gui/style.css"
 
 /* your code */
 // ...
